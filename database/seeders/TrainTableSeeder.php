@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 use Faker\Generator as Faker;
-use App\Models\Trains;
+use App\Models\Train;
 
 class TrainTableSeeder extends Seeder
 {
