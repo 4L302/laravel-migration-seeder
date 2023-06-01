@@ -24,10 +24,10 @@ class TrainTableSeeder extends Seeder
             $newTrain -> Stazione_di_arrivo = $faker->city();
             $newTrain -> Orario_di_partenza = $faker->time();
             $newTrain -> Orario_di_arrivo = $faker->time();
-            $newTrain -> Codice_Treno = ;
-            $newTrain -> Numero_Carrozze = '';
-            $newTrain -> In_orario = '';
-            $newTrain -> Cancellato = '';
+            $newTrain -> Codice_Treno = $faker->;
+            $newTrain -> Numero_Carrozze = $faker->randomDigitNotNull();
+            $newTrain -> In_orario = $faker->boolean();
+            $newTrain -> Cancellato = $faker->boolean();
             $newTrain->save();
         }
     }
