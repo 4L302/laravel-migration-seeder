@@ -21,7 +21,7 @@ return new class extends Migration
             $table->time('Orario di partenza');
             $table->time('Orario di arrivo');
             $table->string('Codice Treno');
-            $table->int('Numero Carrozze');
+            $table->integer('Numero Carrozze');
             $table->boolean('In orario');
             $table->boolean('Cancellato');
             $table->timestamps();
