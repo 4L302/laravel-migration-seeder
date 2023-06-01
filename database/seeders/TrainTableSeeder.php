@@ -19,12 +19,12 @@ class TrainTableSeeder extends Seeder
     {
         for($i = 0; $i < 20; $i ++){
             $newTrain = new Train();
-            $newTrain -> Azienda = '';
-            $newTrain -> Stazione_di_partenza = '';
-            $newTrain -> Stazione_di_arrivo = '';
-            $newTrain -> Orario_di_partenza = '';
-            $newTrain -> Orario_di_arrivo = '';
-            $newTrain -> Codice_Treno = '';
+            $newTrain -> Azienda = $faker->name();
+            $newTrain -> Stazione_di_partenza = $faker->city();
+            $newTrain -> Stazione_di_arrivo = $faker->city();
+            $newTrain -> Orario_di_partenza = $faker->time();
+            $newTrain -> Orario_di_arrivo = $faker->time();
+            $newTrain -> Codice_Treno = ;
             $newTrain -> Numero_Carrozze = '';
             $newTrain -> In_orario = '';
             $newTrain -> Cancellato = '';
